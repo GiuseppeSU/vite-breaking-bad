@@ -10,7 +10,7 @@ export default {
     <div class="container-fluid  mt-3 w-75 mb-3">
         <div class="row">
             <div class="col-3">
-                <div class="btn-group mt-3 w-50">
+                <div class="btn-group mt-3 ">
                     <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Alien

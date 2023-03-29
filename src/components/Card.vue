@@ -12,12 +12,14 @@ export default {
 </script>
 
 <template>
-    <div class="container d-flex text-center ">
-        <div class="row m-3">
-            <div class="col ms-color  ">
+    <div class=" text-center ">
+        <div class="row m-3 justify-content-center ">
+            <div class="col-6 ms-color p-4">
+
                 <img :src="image" alt="name" class="my-image">
                 <h1>{{ name }}</h1>
                 <h4>{{ archetype }}</h4>
+
 
 
             </div>
@@ -30,6 +32,8 @@ export default {
 <style lang="scss" scoped>
 .ms-color {
     background-color: white;
+    border: 1px solid black;
+
 
     .my-image {
         height: 100px;

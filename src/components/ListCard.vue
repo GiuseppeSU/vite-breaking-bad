@@ -16,14 +16,14 @@ export default {
 </script>
 
 <template>
-    <div class="container ms-color">
+    <div class="container  ms-color">
         <div class="row" v-for="(card, index) in store.listCard.data" :key="index">
-            <div class="col">
-                <Card v-for="(image, index) in card.card_images" :image="image.image_url" :name="card.name"
-                    :archetype="card.archetype" :key="index">
-                </Card>
 
-            </div>
+            <Card class="col-sm-6" v-for=" (image, index) in card.card_images" :image="image.image_url" :name="card.name"
+                :archetype="card.archetype" :key="index">
+            </Card>
+
+
 
         </div>
 
