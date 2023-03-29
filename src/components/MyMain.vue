@@ -24,14 +24,23 @@ export default {
 
             </div>
         </div>
-        <div class="container w-75">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-
-                    </div>
+    </div>
+    <div class="container-fluid w-75 mt-3">
+        <div class="row">
+            <div class="col">
+                <div class="card">
 
                 </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+
+                </div>
+
             </div>
         </div>
     </div>

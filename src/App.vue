@@ -1,10 +1,23 @@
 <script>
+import axios from 'axios';
 import MyHeader from './components/MyHeader.vue';
 import MyMain from './components/MyMain.vue';
 export default {
   components: {
     MyHeader,
     MyMain
+  },
+  data() {
+    return {
+
+    }
+  },
+  created() {
+    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?name=Dark Magician')
+      .then(response => {
+
+      })
+
   }
 }
 
