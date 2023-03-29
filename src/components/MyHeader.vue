@@ -8,9 +8,9 @@ export default {
 <template>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <img src="../assets/yu-gi-oh-logo.jpg" alt="Yu-Gi-Ho logo" class=" my_image ">
-                <h1>Yu-gi-oh Api</h1>
+            <div class=" col d-flex">
+                <img src="../assets/yu-gi-oh-logo.jpg" alt="Yu-Gi-Oh Logo" class="my_image">
+                <h1 class="ms-4">Yu-Gi-Oh Api!</h1>
             </div>
         </div>
     </div>
