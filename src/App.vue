@@ -4,14 +4,14 @@ import MyHeader from './components/MyHeader.vue';
 import MyMain from './components/MyMain.vue';
 import { store } from './store.js'
 import ListCard from './components/ListCard.vue';
-import Card from './components/Card.vue';
+
 
 export default {
   components: {
     MyHeader,
     MyMain,
     ListCard,
-    Card
+
   },
   data() {
     return {
@@ -40,7 +40,7 @@ export default {
   <main>
     <MyMain></MyMain>
     <ListCard></ListCard>
-    <Card></Card>
+
 
   </main>
 

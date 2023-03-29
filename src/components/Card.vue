@@ -12,10 +12,10 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <img :src="image" alt="">
+    <div class="container d-flex text-center ">
+        <div class="row m-3">
+            <div class="col ms-color  ">
+                <img :src="image" alt="name" class="my-image">
                 <h1>{{ name }}</h1>
                 <h4>{{ archetype }}</h4>
 
@@ -27,4 +27,13 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.ms-color {
+    background-color: white;
+
+    .my-image {
+        height: 100px;
+    }
+
+}
+</style>

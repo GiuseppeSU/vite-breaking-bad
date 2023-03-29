@@ -1,4 +1,5 @@
 <script>
+
 export default {
     name: 'MyMain',
 
@@ -6,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid  mt-3 w-75">
+    <div class="container-fluid  mt-3 w-75 mb-3">
         <div class="row">
             <div class="col-3">
                 <div class="btn-group mt-3 w-50">
@@ -14,32 +15,13 @@ export default {
                         aria-expanded="false">
                         Alien
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu ">
                         <li><a class="dropdown-item" href="#">Menu item</a></li>
                         <li><a class="dropdown-item" href="#">Menu item</a></li>
                         <li><a class="dropdown-item" href="#">Menu item</a></li>
                     </ul>
                 </div>
 
-
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid w-75 mt-3">
-        <div class="row">
-            <div class="col">
-                <div class="card">
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="card">
-
-                </div>
 
             </div>
         </div>
