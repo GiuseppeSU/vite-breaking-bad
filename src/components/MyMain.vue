@@ -13,12 +13,12 @@ export default {
                 <div class="btn-group mt-3 ">
                     <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Alien
+                        All
                     </button>
                     <ul class="dropdown-menu ">
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                        <li><a class="dropdown-item" href="#">Zodiac</a></li>
+                        <li><a class="dropdown-item" href="#">Exchange of the Spirit</a></li>
+                        <li><a class="dropdown-item" href="#">Laval</a></li>
                     </ul>
                 </div>
 

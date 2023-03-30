@@ -20,7 +20,7 @@ export default {
     }
   },
   created() {
-    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?name=Dark Magician')
+    axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php?banlist=tcg&level=4&sort=name")
       .then(response => {
         this.store.listCard = response.data
         console.log(this.store)
