@@ -15,20 +15,45 @@ export default {
   },
   data() {
     return {
-      store
+      store,
+      baseUrl: "https://db.ygoprodeck.com/api/v7/"
+
+
+    }
+  },
+  methods: {
+    getCards(archeType) {
+      console.log(archeType)
+
+      let urlApi = this.baseUrl + "cardinfo.php?sort=name&num=25&offset=0"
+      if (archeType) {
+        urlApi += '&archetype=' + archeType
+      }
+      axios.get(urlApi)
+        .then(response => {
+          this.store.listCard = response.data
+          console.log(this.store)
+        });
+    },
+    getArchetype() {
+      let urlType = this.baseUrl + "archetypes.php"
+      axios.get(urlType)
+        .then(response => {
+          this.store.archetype = response.data
+          console.log(this.store.archetype)
+        });
 
     }
   },
   created() {
-    axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php?banlist=tcg&level=4&sort=name")
-      .then(response => {
-        this.store.listCard = response.data
-        console.log(this.store)
+    this.getCards();
+    this.getArchetype();
 
-      })
 
   }
+
 }
+
 
 </script>
 
@@ -38,7 +63,7 @@ export default {
   </header>
 
   <main>
-    <MyMain></MyMain>
+    <MyMain @select="getCards"></MyMain>
     <ListCard></ListCard>
 
 
